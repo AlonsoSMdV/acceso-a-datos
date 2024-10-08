@@ -14,8 +14,11 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
+    <p><strong>Personas en la lista: {{ (peopleSvc.getAll() | async)?.length}}<br></strong></p>
+    <ion-button (click)="createPerson()">Añadir persona</ion-button>
+    <ion-button (click)="deletePerson()">Eliminar persona</ion-button>
+    <strong><br>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
-  {{ (peopleSvc.getAll() | async)?.length}}
+  
 </ion-content>

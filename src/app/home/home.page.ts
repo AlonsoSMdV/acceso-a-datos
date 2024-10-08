@@ -10,8 +10,17 @@ export class HomePage {
 
   constructor(
     public peopleSvc:PeopleService
-  ) {
+  ) {}
+    createPerson(){
+      this.peopleSvc.addPerson({
+        name: "",
+        surname: "", 
+        age: 0
+      });
+    }
+    deletePerson(){
+      this.deletePerson();
+    }
 
-  }
 
 }
