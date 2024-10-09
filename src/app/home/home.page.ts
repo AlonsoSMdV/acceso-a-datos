@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { PeopleService } from '../core/services/people.service';
+import { Preferences } from '@capacitor/preferences';
+import { PreferencesService } from '../core/services/preferences.service';
+
 
 @Component({
   selector: 'app-home',
