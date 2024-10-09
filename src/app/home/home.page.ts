@@ -13,9 +13,14 @@ export class HomePage {
   ) {}
     createPerson(){
       this.peopleSvc.addPerson({
-        name: "",
-        surname: "", 
-        age: 0
+        name: "Alonso",
+        surname: "Sánchez Moreno de Vega", 
+        age: 20
+      }).subscribe({
+          next:(value)=>{
+            console.log("Persona añadida corréctamente");
+            console.log(value);
+          },
       });
     }
     deletePerson(){
